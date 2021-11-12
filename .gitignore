@@ -130,6 +130,7 @@ dmypy.json
 
 # config
 .DS_Store
+.vscode/
 
 # html
 *.html
