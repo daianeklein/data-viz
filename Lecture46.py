@@ -7,14 +7,13 @@ import pandas as pd
 
 
 df = pd.read_csv('/Users/daianeklein/Documents/DataScience/Data-Viz/Plotly-Dash/Plotly-Dash/Plotly-Dashboards-with-Dash/Data/gapminderDataFiveYear.csv')
-df.head()
+
 
 app = dash.Dash()
 
 year_options = []
 for year in df['year'].unique():
-    year_options.append({'label' :str(year), 'value' : year})
- 
+    year_options.append({'label' :str(year), 'value' : year})   
 
 app.layout = html.Div([
     dcc.Graph( id = 'graph'),
@@ -23,7 +22,7 @@ app.layout = html.Div([
 ])
 
 @app.callback(Output('graph', 'figure'),
-             [Input('year-picker', 'value')])
+             [Input('year-picker', 'value')]) 
 
 def update_figure(selected_year):
     
@@ -41,7 +40,7 @@ def update_figure(selected_year):
             marker = {'size' : 15},
             name = continent_name
         ))
-           
+
     return {'data' : traces,
             'layout': go.Layout(title='My Plot',
                                xaxis = {'title' : 'gpd Per Capita', 'type' : 'log'},
