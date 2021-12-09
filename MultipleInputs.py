@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
 
-df = pd.read_csv('/Users/daianeklein/Documents/Data Science/Data-Viz/Plotly-Dash/Plotly-Dash/Plotly-Dashboards-with-Dash/Data/mpg.csv')
+df = pd.read_csv('/Users/daianeklein/Documents/DataScience/Data-Viz/Plotly-Dash/Plotly-Dash/Plotly-Dashboards-with-Dash/Data/mpg.csv')
 
 app = dash.Dash()
 

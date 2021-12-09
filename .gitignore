@@ -137,3 +137,7 @@ dmypy.json
 
 #py folder
 python/
+Dash book/
+
+test.py
+Workspace.code-workspace

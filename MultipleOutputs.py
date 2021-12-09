@@ -7,7 +7,7 @@ import base64
 
 app = dash.Dash()
 
-df = pd.read_csv('/Users/daianeklein/Documents/Data Science/Data-Viz/Plotly-Dash/Plotly-Dash/Plotly-Dashboards-with-Dash/Data/wheels.csv')
+df = pd.read_csv('/Users/daianeklein/Documents/DataScience/Data-Viz/Plotly-Dash/Plotly-Dash/Plotly-Dashboards-with-Dash/Data/wheels.csv')
 
 def encode_image(image_file):
     encoded = base64.b64encode(open(image_file, 'rb').read())
