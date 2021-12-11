@@ -141,3 +141,6 @@ Dash book/
 
 test.py
 Workspace.code-workspace
+
+# data
+stocks-data.csv
