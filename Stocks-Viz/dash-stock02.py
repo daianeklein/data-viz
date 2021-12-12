@@ -52,7 +52,7 @@ app.layout = dbc.Container([
         dbc.Col([
             dcc.Graph(id='my-line-plot', figure = {})
         ], 
-            xs = 12, sm = 12, md = 12, lg = 8, xl = 8)
+            xs = 12, sm = 12, md = 12, lg = 12, xl = 12)
         ])
 
     ])
@@ -66,8 +66,14 @@ def update_line_plot(stock_selected):
     figln = px.line(df01, x ='Date', y = 'High', color = 'Symbols')
     figln.update_layout({
         'plot_bgcolor' : 'rgba(0,0,0,0)',
-        'paper_bgcolor' : 'rgba(0,0,0,0)'
-    })
+        'paper_bgcolor' : 'rgba(0,0,0,0)'},
+        title = ' ',
+        legend_title = 'Stock Company',
+        legend_title_font_color = 'yellow',
+        font = dict(color = 'white'
+        )
+        )
+    figln.update_xaxes(tickfont=dict(color = 'white'))
     return figln
 
 
