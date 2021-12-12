@@ -9,20 +9,20 @@ from dash import dcc
 from dash.dependencies import Input, Output
 
 import dash_bootstrap_components as dbc
-
 import plotly.express as px
 
 
 #start = datetime.datetime(2020,1, 1)
 #end = datetime.datetime(2020, 12, 3)
 #df = web.DataReader(['AMZN','GOOGL','FB','PFE','MRNA','BNTX'],
-#                    'stooq', start=start, end=end)
+#                    'stooq', start=start, end=end) 
 
 #df = df.stack().reset_index()
 #df.to_csv('stocks-data.csv', index = False)
 
 df = pd.read_csv('stocks-data.csv')
 print(df[:15])
+
 
 # https://www.bootstrapcdn.com/bootswatch/
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -53,7 +53,7 @@ app.layout = dbc.Container([
                 ], #width = {'size' : 5, 'offset' : 1, 'order' : 2},
                             xs = 12, sm = 12, md = 12, lg = 5, xl = 5)
             ], justify = 'start'), #, justify='start'
-
+############
             dbc.Row([
         dbc.Col([
             html.P("Select Company Stock:",
