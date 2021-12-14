@@ -36,7 +36,7 @@ app.layout = dbc.Container([
     html.P(' '),
     dbc.Row([
         dbc.Col(
-            html.H1('Stock Market Dashboard',
+            html.H1('STOCK MARKET DASHBOARD',
                     className = 'text-center text-primary, mb-4'))
     ]),
 
@@ -45,20 +45,32 @@ app.layout = dbc.Container([
 
     dbc.Row([
         dbc.Col(
-            html.H5('Select Company Stock',
+            html.H6('Select Company Stock',
                     className = 'text left text-primary, mb-4'))
     ]),
+
+    dbc.Row([
         dbc.Col([
             dcc.Checklist(id='stock-checklist', value = [df['Symbols'].unique()],
                           options = [{'label' : x, 'value' : x} for x in df['Symbols'].unique()],
                           style = { 'display' : 'block'},
                           labelClassName = 'text-center m-2'),
+                
 
+            dbc.Checklist(id='stock-checklist2', value = [df['Symbols'].unique()],
+                        options = [{'label' : x, 'value' : x} for x in df['Symbols'].unique()],
+                       style = { 'display' : 'block'},
+                       labelClassName = 'text-center m-2'),],
+                        xs = 12, sm = 12, md = 12, lg = 3, xl = 3),
+            
         dbc.Col([
-            dcc.Graph(id='my-line-plot', figure = {})
-        ], 
-            xs = 12, sm = 12, md = 12, lg = 12, xl = 12)
+            dcc.Graph(id='my-line-plot', figure = {},
+            style = {'border' : '1px Azure Solid'})
+        ], xs = 12, sm = 12, md = 12, lg = 9, xl = 9),
+
+        
         ])
+    
 
     ])
 
@@ -72,13 +84,21 @@ def update_line_plot(stock_selected):
     figln.update_layout({
         'plot_bgcolor' : 'rgba(0,0,0,0)',
         'paper_bgcolor' : 'rgba(0,0,0,0)'},
-        title = ' ',
+        title = {'text' : 'Stock Historical Prices',
+                'y':0.9,
+                'x':0.5,
+                'xanchor' : 'center',
+                'yanchor' : 'top'},
         legend_title = 'Stock Company',
         legend_title_font_color = 'yellow',
-        font = dict(color = 'white'
+        font = dict(color = 'white'),
+        xaxis_title = 'DATE',
+        yaxis_title = 'DAY HIGH'
         )
-        )
-    figln.update_xaxes(tickfont=dict(color = 'white'))
+    figln.update_xaxes(tickfont=dict(color = 'white'),
+                        showgrid=False)
+
+    figln.update_yaxes(showgrid=False)
     return figln
 
 
