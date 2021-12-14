@@ -26,21 +26,26 @@ end = datetime.datetime(2020, 12, 3)
 #print(df[:15])
 
 
-df = pd.read_csv('stocks-data.csv')
+df = pd.read_csv('/Users/daianeklein/Documents/DataScience/Data-Viz/Plotly-Dash/Plotly-Dash/data-viz/stocks-data.csv')
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SLATE],
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}] )
 
 app.layout = dbc.Container([
+    html.P(' '),
     dbc.Row([
         dbc.Col(
             html.H1('Stock Market Dashboard',
-                    className = 'text center text-primary, mb-4'))
+                    className = 'text-center text-primary, mb-4'))
     ]),
+
+        html.Div(id='line-separator', style = {'border' : '2px white solid'}),
+        html.P(' '),
+
     dbc.Row([
         dbc.Col(
-            html.H4('Select Company Stock',
+            html.H5('Select Company Stock',
                     className = 'text left text-primary, mb-4'))
     ]),
         dbc.Col([
