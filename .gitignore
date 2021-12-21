@@ -144,3 +144,6 @@ Workspace.code-workspace
 
 # data
 stocks-data.csv
+
+Data
+*.csv
