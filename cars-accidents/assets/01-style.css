@@ -1,0 +1,54 @@
+body {
+	font-family: sans-serif;
+	color: red;
+}
+
+/* .year-slider{
+	color: #303030;
+}
+
+.rc-slider-rail{
+	background: color #303030;
+} */
+
+.rc-slider-step{
+	background-color: #404040;
+
+}
+
+.rc-slider-handle{
+	border-style: solid;
+	border-color: lightcoral;
+}
+
+.rc-slider-dot{
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: white;
+} 
+
+.rc-slider-dot-active{
+	border-style: solid;
+	border-color: lightcoral;
+}
+
+.rc-slider-handle:hover{
+	border-style: solid;
+	border-color: coral;
+}
+
+.rc-slider-mark-text{
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+	font-size: 7.5px;
+
+}
+
+.container-year-slider{
+	padding: 1em;
+}
+
