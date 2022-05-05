@@ -3,17 +3,9 @@ body {
 	color: red;
 }
 
-/* .year-slider{
-	color: #303030;
-}
-
-.rc-slider-rail{
-	background: color #303030;
-} */
 
 .col-ano-ocorrencia{
 	padding-top: 1em;
-	margin-right: 1em;
 	background-color: #282828;
 }
 
@@ -21,6 +13,9 @@ body {
 	padding-top: 1em;
 	padding-left: 1em;
 	background-color: #282828;
+	border-left: solid;
+	border-color: #282424;
+	border-width: 10px;
 }
 
 .rc-slider-step{
@@ -57,9 +52,7 @@ body {
     cursor: pointer;
     color: #999;
 	font-size: 7.5px;
-
 }
-
 
 .year-slider{
 	background-color: #282828;
@@ -71,5 +64,12 @@ body {
 	height: 30px;
 	font-size: 8px;
 	align-content: center;
+}
+
+.container-row-filters{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 0;
+	margin-left: 0;
 }
 
