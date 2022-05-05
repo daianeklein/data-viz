@@ -11,6 +11,18 @@ body {
 	background: color #303030;
 } */
 
+.col-ano-ocorrencia{
+	padding-top: 1em;
+	margin-right: 1em;
+	background-color: #282828;
+}
+
+.col-uf-ocorrencia{
+	padding-top: 1em;
+	padding-left: 1em;
+	background-color: #282828;
+}
+
 .rc-slider-step{
 	background-color: #404040;
 
@@ -48,7 +60,16 @@ body {
 
 }
 
-.container-year-slider{
-	padding: 1em;
+
+.year-slider{
+	background-color: #282828;
+}
+
+.dropdown-states{
+	padding: 0 0 0 1em;
+	background-color: #282828;
+	height: 30px;
+	font-size: 8px;
+	align-content: center;
 }
 
