@@ -3,13 +3,13 @@ body {
 	color: red;
 }
 
-
 .col-ano-ocorrencia{
 	padding-top: 1em;
 	background-color: #282828;
 }
 
 .col-uf-ocorrencia{
+
 	padding-top: 1em;
 	padding-left: 1em;
 	background-color: #282828;
@@ -73,3 +73,6 @@ body {
 	margin-left: 0;
 }
 
+#bar-plot{
+	margin-top: 5%;
+}
