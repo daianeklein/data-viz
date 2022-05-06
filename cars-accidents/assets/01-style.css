@@ -76,3 +76,8 @@ body {
 #bar-plot{
 	margin-top: 5%;
 }
+
+#line-plot{
+	height: 50%;
+	background-color: #282828;
+}
