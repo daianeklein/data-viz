@@ -73,11 +73,10 @@ body {
 	margin-left: 0;
 }
 
-#bar-plot{
+#bar-plot-uf{
 	margin-top: 5%;
 }
 
-#line-plot{
-	height: 50%;
-	background-color: #282828;
-}
+
+
+
