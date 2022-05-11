@@ -1,7 +1,13 @@
 body {
 	font-family: sans-serif;
-	color: red;
+	color: white;
 }
+
+.col-uf-ocorrencia{
+	padding-top: 1em;
+	background-color: #282828;
+}
+
 
 .col-ano-ocorrencia{
 	padding-top: 1em;
@@ -14,8 +20,8 @@ body {
 	padding-left: 1em;
 	background-color: #282828;
 	border-left: solid;
-	border-color: #282424;
-	border-width: 10px;
+	border-color: #222;
+	border-width: 9px;
 }
 
 .rc-slider-step{
@@ -33,6 +39,12 @@ body {
 	border-width: 0.1em;
 	border-color: white;
 } 
+
+#vitimas-selected {
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
 
 .rc-slider-dot-active{
 	border-style: solid;
@@ -71,12 +83,27 @@ body {
 	justify-content: space-between;
 	margin-right: 0;
 	margin-left: 0;
+	background-color: #282828;
 }
 
-#bar-plot-uf{
-	margin-top: 5%;
+#line-plot{
+	height: 50%;
 }
 
 
+#vitimas-selected{
+	padding: 0 0 0 1em;
+	background-color: #282828;
+	height: 30px;
+	font-size: 8px;
+	align-content: center;
+}
 
+.vitimas-col{
+	padding-top: 1em;
+	border-left: solid;
+	border-color: #222;
+	border-width: 8px;
+
+}
 
