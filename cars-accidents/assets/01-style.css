@@ -99,6 +99,8 @@ body {
 	align-content: center;
 }
 
+
+
 .vitimas-col{
 	padding-top: 1em;
 	border-left: solid;
@@ -107,3 +109,44 @@ body {
 
 }
 
+
+/*------- second section*/
+#first-line-separator{
+	border-style: solid;
+	border-width: 4px;
+	border-color: lightcoral;
+	margin-bottom: 1em;
+}
+
+.text-general{
+	text-align: center;
+	color : #F8F9F9;
+	align-items: center;
+
+}
+
+.div-config{
+	background-color: #2f3031;
+	padding: 1em 0;
+}
+
+#dashboard-sub-title{
+	color: #A6ACAF;
+	font-size: 10px;
+	font-weight: 'light';
+	text-align: center;
+	padding-top: 15px;
+}
+
+.text-filter{
+	color: white;
+	font-size: 9px;
+	font-weight: 'light';
+	padding-left: 5px;
+}
+
+.cols-filters{
+	border-left: solid;
+	color: yellow;
+	border-width: 4px;
+}
