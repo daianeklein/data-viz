@@ -67,47 +67,47 @@ body {
 }
 
 .year-slider{
-	background-color: #282828;
+	background-color: #2f3031;
 }
 
 .dropdown-states{
 	padding: 0 0 0 1em;
-	background-color: #282828;
+	background-color: #2f3031;
 	height: 30px;
 	font-size: 8px;
 	align-content: center;
 }
 
-.container-row-filters{
+/* .container-row-filters{
 	display: flex;
 	justify-content: space-between;
 	margin-right: 0;
 	margin-left: 0;
 	background-color: #282828;
-}
+} */
 
 #line-plot{
 	height: 50%;
 }
 
-
+ 
 #vitimas-selected{
 	padding: 0 0 0 1em;
-	background-color: #282828;
+	background-color: #2f3031;
 	height: 30px;
 	font-size: 8px;
 	align-content: center;
-}
+} 
 
 
 
-.vitimas-col{
+ .vitimas-col{
 	padding-top: 1em;
-	border-left: solid;
+	/* border-left: solid;
 	border-color: #222;
-	border-width: 8px;
+	border-width: 8px; */
 
-}
+} 
 
 
 /*------- second section*/
@@ -145,8 +145,6 @@ body {
 	padding-left: 5px;
 }
 
-.cols-filters{
-	border-left: solid;
+.vitimas-col{
 	color: yellow;
-	border-width: 4px;
 }
