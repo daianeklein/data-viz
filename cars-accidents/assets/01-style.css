@@ -145,6 +145,36 @@ body {
 	padding-left: 5px;
 }
 
-.vitimas-col{
-	color: yellow;
+.vitimas-selected{
+	border-left: solid;
+	border-color: lightcoral;
+	border-width: 2px;
 }
+
+.cols-filters{
+	border-left: solid;
+	border-color: lightcoral;
+	border-width: 2px;
+}
+
+
+/* dropdown menu options */
+.VirtualizedSelectOption {
+    background-color: white;
+    color: rgb(3, 3, 3);
+ }
+
+
+ #dropdown-uf .Select.dcc_control.is-open {
+	max-height: 10%;
+	overflow-y:visible;
+  }
+  
+  #dropdown-uf .Select.dcc_control {
+	max-height: 10px;
+	overflow-y:auto;
+  }
+
+  #lineplot{
+	  margin-top: 2%;
+  }
