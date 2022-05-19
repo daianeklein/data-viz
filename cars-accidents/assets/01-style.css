@@ -111,11 +111,14 @@ body {
 
 
 /*------- second section*/
+
+
+
 #first-line-separator{
 	border-style: solid;
 	border-width: 4px;
 	border-color: lightcoral;
-	margin-bottom: 1em;
+
 }
 
 .text-general{
@@ -178,3 +181,7 @@ body {
   #lineplot{
 	  margin-top: 2%;
   }
+
+  #first-div{
+	margin: 0 1em;
+}
